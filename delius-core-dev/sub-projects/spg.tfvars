@@ -35,9 +35,6 @@ spg_app_name = "spgw"
 s3_bucket_config = "tf-eu-west-2-hmpps-delius-core-dev-spgw-s3bucket"
 spg_build_inv_dir = "/tmp/ansible/inventories/hmpps/generic-default"
 
-
-
-
 #ecs cpu units set to null (default appears to be 1024 across micro/small/medium)
 #ecs memory is instance memory less headroom required for the service (see hmpps-delius-spg-shared-terraform/README_ECS_MEMORY_AND_CPU_LIMITS.md
 #Java needs to be approx 200MB less than available memory to allow for things like clamscan & sshd etc (this is a guestimate)
@@ -73,10 +70,7 @@ spg_iso_ecs_memory = 1881
 SPG_ISO_JAVA_MAX_MEM = 1691
 SPG_ISO_HOST_TYPE = "iso"
 
-
-
-SPG_GENERIC_BUILD_INV_DIR= "/tmp/spg/ansible/inventories/generic-default"
-
+SPG_GENERIC_BUILD_INV_DIR = "/tmp/spg/ansible/inventories/generic-default"
 
 #SPG_ENVIRONMENT_CN represents the strategic public DNS gov domain, and is used by SPG to know the name of the certificates it imports
 #as well as displaying the environment in terminals and splash screens
@@ -91,7 +85,6 @@ SPG_DELIUS_MQ_URL ="tcp://delius-jms.delius-core-dev.internal:61617"
 
 SPG_DOCUMENT_REST_SERVICE_ADMIN_URL  ="https://alfresco.dev.delius-core.probation.hmpps.dsd.io/alfresco/service/admin-spg"
 SPG_DOCUMENT_REST_SERVICE_PUBLIC_URL  ="https://alfresco.dev.delius-core.probation.hmpps.dsd.io/alfresco/service/noms-spg"
-
 
 SPG_ISO_FQDN  = "spgw-ext.dev.probation.service.justice.gov.uk"
 SPG_MPX_FQDN  = "spgw-mpx-int.dev.delius-core.probation.hmpps.dsd.io"
